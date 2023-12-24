@@ -1,229 +1,312 @@
-.main {
-  display: flex;
+/* Home.module.css */
+
+/* Import Google Fonts - Montserrat */
+
+/* Container styles */
+.container {
+  background-color: #00AEC5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  /* Set your desired background color */
+}
+.cont{
+ display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 14%;
+  padding-top: 20px;
+  padding-left: 20px ;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-left: 20px;
+}
+
+.elearning {
+  margin-left: 20px;
+}
+
+/* Content styles */
+.content {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-}
-
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
   width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff; /* Set background color for content area */
+  border-radius: 10px; /* Add border-radius for a nicer look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
 }
 
-.description a {
+/* Buttons container */
+.buttonsContainer {
+  flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
 }
 
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+/* Buttons styles */
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+.getStartedButton,
+.loginButton {
+  flex: 1;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  background-color: #000; /* Set button background color */
+  color: #fff; /* Set button text color */
+  font-weight: 700; /* Use a bold font for buttons */
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: var(--max-width);
-  width: 100%;
+.getStartedButton:hover,
+.loginButton:hover {
+  background-color: #333; /* Change button color on hover */
 }
+
+.bgimage {
+  height: 45vh;
+  background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
+  background-size: cover;
+  background-position: center;
+}
+/* Style for the card container */
+.cardcontainer {
+  margin-top: -100px;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45vh;
+}
+
+/* Style for the card body */
+.cardbody {
+  padding: 2rem;
+  text-align: center;
+  background: hsla(0, 0%, 100%, 0.8);
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  height: 400px;
+}
+
+/* Additional styling for form elements */
+.inputname{
+  display: flex;
+}
+.forminput {
+  padding: 0.5rem;
+  margin: 0.7rem;
+  width: 40%;
+}
+
+.forminput::placeholder {
+  font-weight: bold; 
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  
+}
+.submitbtn {
+  background-color: #1266f1;
+  width: 42.5%;
+  color: white;
+  border: none;
+  font-weight: bolder;
+  padding: 0.5rem;
+  margin: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Header.module.css */
+
+/* Navbar container */
+.navbar {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Items are spaced evenly along the main axis */
+  align-items: center; /* Align items vertically in the center */
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #bdc7fb; /* Background color for the navbar */
+}
+
+/* Left section styles */
+.left {
+  display: flex; /* Use flexbox for left section */
+  align-items: center; /* Align items vertically */
+}
+
+/* Logo styles */
+.logo {
+  display: flex; /* Use flexbox for logo */
+  align-items: center; /* Align items vertically */
+}
+
+.logo h2 {
+  margin-left: 10px; /* Add some spacing between the icon and text */
+}
+
+/* Right section styles */
+.right {
+  display: flex; /* Use flexbox for right section */
+}
+
+.right ul {
+  list-style-type: none; /* Remove default list styles */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.right ul li {
+  margin-left: 15px; /* Add spacing between list items */
+}
+
+/* Button styles */
+.button {
+  padding: 8px 12px; /* Adjust button padding */
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  background-color: #395570; /* Red background color for the button */
+  color: white; /* Text color */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* MobileCard.module.css */
 
 .card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
+.cardBody {
+  padding: 0px 15px 15px 15px;
 }
 
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
+.title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
+.desc {
+  font-weight: bold;
 }
 
-.center {
+.buttoncourse {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin: 10px 0px;
+  width: 100%; /* Ensure the button takes up the full width */
+  box-sizing: border-box; /* Include padding and border within the width */
+}
+
+.CourseListcont{
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
-  padding: 4rem 0;
+  justify-content: center;
 }
 
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+/* CourseDetails.module.css */
+.CourseBox {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  background-color: #ffffff;
+}
+.courseitem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
+.courseimage {
+  width: 370px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.title{
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+/* Add this CSS in your styles/Home.module.css or relevant styling file */
+.detailcontainer {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
 }
 
-.center::before,
-.center::after {
-  content: '';
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+.details {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 700;
 }
 
-.logo {
-  position: relative;
-}
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
+.videoLinks {
+  margin-top: 15px;
 }
 
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
+.videoList {
+  list-style: none;
+  padding: 0;
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
-  }
+.videoListItem {
+  margin-bottom: 5px;
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
+.list {
+  color: #007bff; /* Change link color as needed */
+  text-decoration: none;
+  display: inline-block;
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+.list:hover {
+  text-decoration: underline;
 }
