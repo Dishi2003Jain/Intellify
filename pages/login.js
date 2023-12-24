@@ -20,6 +20,7 @@ export default function Login() {
       }
    
       console.log("Logged in successfully:", data);
+      window.alert("Logged in successfully");
       router.push("/home");
       // Redirect or perform actions after successful login
     } catch (error) {

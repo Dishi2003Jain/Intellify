@@ -21,6 +21,7 @@ export default function SignUp() {
         // Show error message to the user
       } else {
         console.log('Signup successful!');
+        window.alert("Please check your mail to confirm your signup")
         // Redirect or show success message
       }
       const { data, insertError } = await supabase
