@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { signOut } from '../services/auth';
 import { supabase } from '../services/supabase';
 import Image from 'next/image';
-import styles from '../../styles/Home.module.css';
+import styles from '../styles/Home.module.css';
 
 const Header = () => {
   const [session, setSession] = useState(null);

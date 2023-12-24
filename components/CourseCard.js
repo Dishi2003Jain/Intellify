@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../../styles/Home.module.css';
+import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import { supabase } from '../services/supabase'; // Import your Supabase client instance
 import { useState, useEffect } from 'react';
